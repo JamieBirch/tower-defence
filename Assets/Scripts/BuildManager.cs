@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BuildManager : MonoBehaviour
@@ -18,7 +16,7 @@ public class BuildManager : MonoBehaviour
     }
 
     public GameObject standardTurretPrefab;
-    public GameObject anotherTurretPrefab;
+    public GameObject missileLauncherPrefab;
 
     private GameObject turretToBuild;
 
