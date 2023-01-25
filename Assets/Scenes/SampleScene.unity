@@ -6550,7 +6550,7 @@ MonoBehaviour:
     prefab: {fileID: 3892851936554044993, guid: 60ee64941ee2f4340a27c5c52f90e415, type: 3}
     cost: 250
   laserBeamer:
-    prefab: {fileID: 138784723889151907, guid: bd9b52aa04e79f04f8d77a0e90ab7488, type: 3}
+    prefab: {fileID: 4158353459441810356, guid: ad1d1f4c08477db468979ecf21011899, type: 3}
     cost: 350
 --- !u!1001 &838620794
 PrefabInstance:
