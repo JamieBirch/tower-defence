@@ -2,11 +2,17 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    private bool gameOver = false;
-    // Update is called once per frame
+    public static bool GameIsOver;
+
+    public GameObject gameOverUI;
+
+    private void Start()
+    {
+        GameIsOver = false;
+    }
     void Update()
     {
-        if (gameOver)
+        if (GameIsOver)
         {
             return;
         }
@@ -19,7 +25,7 @@ public class GameManager : MonoBehaviour
 
     void EndGame ()
     {
-        gameOver = true;
-        Debug.Log("Game Over! :(");
+        GameIsOver = true;
+        gameOverUI.SetActive(true);
     }
 }
