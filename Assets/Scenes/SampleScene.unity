@@ -7184,13 +7184,13 @@ MonoBehaviour:
   missileLauncher:
     prefab: {fileID: 3892851936554044993, guid: 60ee64941ee2f4340a27c5c52f90e415, type: 3}
     cost: 250
-    upgradedPrefab: {fileID: 0}
-    upgradeCost: 60
+    upgradedPrefab: {fileID: 3892851936554044993, guid: feb55801bba8e354c965a2496bcebaea, type: 3}
+    upgradeCost: 150
   laserBeamer:
     prefab: {fileID: 4158353459441810356, guid: ad1d1f4c08477db468979ecf21011899, type: 3}
     cost: 350
-    upgradedPrefab: {fileID: 0}
-    upgradeCost: 60
+    upgradedPrefab: {fileID: 4158353459441810356, guid: e63264c65661d584e864ab1f174c3c44, type: 3}
+    upgradeCost: 250
 --- !u!1001 &838620794
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8462,6 +8462,7 @@ MonoBehaviour:
   ui: {fileID: 319249317}
   upgradeCost: {fileID: 1714537834}
   upgradeButton: {fileID: 1394557222}
+  sellPrice: {fileID: 167578776}
 --- !u!4 &979143971 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8871853446832489056, guid: a03cba51b7ecdad459a517e90c7efa17, type: 3}
@@ -11608,6 +11609,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildEffect: {fileID: 3898768931679039241, guid: 56cabbd5449a1214f89dfdeb5c5e1b89, type: 3}
+  sellEffect: {fileID: 3898768931679039241, guid: cc8076096419be24fa23e57bc63ca0cc, type: 3}
   nodeUI: {fileID: 972801896}
 --- !u!114 &1350050093
 MonoBehaviour:
@@ -11621,7 +11623,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0dbb0c57abfc14a846bfeb918fffaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startMoney: 400
+  startMoney: 99999
   startLives: 1
 --- !u!114 &1350050094
 MonoBehaviour:
@@ -16694,7 +16696,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1852525560}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 972801896}
+        m_TargetAssemblyTypeName: NodeUI, Assembly-CSharp
+        m_MethodName: Sell
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1852525560
 MonoBehaviour:
   m_ObjectHideFlags: 0

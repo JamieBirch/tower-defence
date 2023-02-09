@@ -20,6 +20,7 @@ public class BuildManager : MonoBehaviour
     //public GameObject missileLauncherPrefab;
 
     public GameObject buildEffect;
+    public GameObject sellEffect;
 
     private TurretBlueprint turretToBuild;
     private Node selectedNode;
