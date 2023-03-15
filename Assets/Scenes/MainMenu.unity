@@ -562,18 +562,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1403400892}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.22600003}
   m_LocalScale: {x: 0.004, y: 0.004, z: 0.004}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 705666193}
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 7519508820520045222}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.226, y: 1.735}
+  m_AnchoredPosition: {x: 0, y: 1.2280002}
   m_SizeDelta: {x: 264.561, y: 140.6218}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1478098311
@@ -641,7 +641,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1664472393
 GameObject:
@@ -949,18 +949,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1903236140}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.004, y: 0.004, z: 0.004}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 1.9420003}
+  m_LocalScale: {x: 0.0039999993, y: 0.004, z: 0.0039999993}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1664472394}
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 7519508820520045222}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -1.942, y: 1.39}
+  m_AnchoredPosition: {x: 0, y: 0.8829999}
   m_SizeDelta: {x: 264.561, y: 140.6218}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2050623831
@@ -1267,6 +1267,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7519508820520045222}
+  - component: {fileID: 7519508820520045223}
   m_Layer: 0
   m_Name: PartToRotate
   m_TagString: Untagged
@@ -1305,6 +1306,28 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5192095654341661772}
+  - {fileID: 1403400896}
+  - {fileID: 1903236144}
   m_Father: {fileID: 2428879470484004056}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!95 &7519508820520045223
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6105909629254109846}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7e9477106e595df489099a00abf46e30, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
