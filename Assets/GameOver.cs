@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class GameOver : MonoBehaviour
 {
     public Text RoundsText;
+    public string MainMenuSceneName = "MainMenu";
 
     private void OnEnable()
     {
@@ -13,11 +14,13 @@ public class GameOver : MonoBehaviour
 
     public void Retry ()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void Menu ()
     {
-        Debug.Log("Go menu");
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(MainMenuSceneName);
     }
 }
