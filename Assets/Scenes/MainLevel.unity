@@ -12241,6 +12241,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ui: {fileID: 153448951}
+  MainMenuSceneName: MainMenu
 --- !u!1001 &1363451351
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13967,6 +13968,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RoundsText: {fileID: 1231713461}
+  MainMenuSceneName: MainMenu
 --- !u!1001 &1523801944
 PrefabInstance:
   m_ObjectHideFlags: 0
