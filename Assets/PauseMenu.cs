@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,6 +5,7 @@ public class PauseMenu : MonoBehaviour
 {
     public GameObject ui;
     public string MainMenuSceneName = "MainMenu";
+    public SceneFader sceneFader;
 
     // Update is called once per frame
     void Update()
@@ -34,12 +32,12 @@ public class PauseMenu : MonoBehaviour
     public void Retry()
     {
         Toggle();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        sceneFader.FadeTo(SceneManager.GetActiveScene().name);
     }
 
     public void Menu ()
     {
         Toggle();
-        SceneManager.LoadScene(MainMenuSceneName);
+        sceneFader.FadeTo(MainMenuSceneName);
     }
 }
