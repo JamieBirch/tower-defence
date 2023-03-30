@@ -7525,7 +7525,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.155}
-  m_AnchoredPosition: {x: 0, y: 5.9244385}
+  m_AnchoredPosition: {x: 0, y: 5.9243774}
   m_SizeDelta: {x: 0, y: 11.8487}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &837333825
@@ -12167,9 +12167,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c14038a278c8d474f83dc72e0901c6a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waves:
+  - enemy: {fileID: 4266920966911111466, guid: 485e3aed388ad9440a9c5f05a6dabc29, type: 3}
+    count: 1
+    rate: 2
+  - enemy: {fileID: 4266920966911111466, guid: 485e3aed388ad9440a9c5f05a6dabc29, type: 3}
+    count: 2
+    rate: 2
+  - enemy: {fileID: 4266920966911111466, guid: 485e3aed388ad9440a9c5f05a6dabc29, type: 3}
+    count: 5
+    rate: 2
+  - enemy: {fileID: 4266920966911111466, guid: 5ca443c5548c4974a914817ff427f8cf, type: 3}
+    count: 2
+    rate: 2
+  - enemy: {fileID: 4266920966911111466, guid: 0dd56a5dbc589ae419d76649b66d787f, type: 3}
+    count: 5
+    rate: 2
   enemyPrefab: {fileID: 8020947259398027049, guid: 485e3aed388ad9440a9c5f05a6dabc29, type: 3}
   spawnPoint: {fileID: 1006269472}
-  timeBetweenWaves: 10
+  timeBetweenWaves: 2
   waveCountdownText: {fileID: 220565744}
 --- !u!4 &1350050091
 Transform:
@@ -12214,7 +12230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startMoney: 500
-  startLives: 1
+  startLives: 5
 --- !u!114 &1350050094
 MonoBehaviour:
   m_ObjectHideFlags: 0

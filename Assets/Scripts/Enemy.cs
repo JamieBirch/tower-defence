@@ -9,8 +9,8 @@ public class Enemy : MonoBehaviour
     public float startSpeed = 10f;
     [HideInInspector]
     public float speed;
-    private float startHealth = 100;
-    public float currentHealth;
+    public float startHealth = 100;
+    private float currentHealth;
     public int reward = 50;
 
     [Header("Unity Stuff")]
@@ -38,6 +38,8 @@ public class Enemy : MonoBehaviour
     {
         PlayerStats.Money += reward;
         Destroy(gameObject);
+
+        WaveSpawner.EnemiesAlive--;
     }
 
     public void Slow(float slowPct)
