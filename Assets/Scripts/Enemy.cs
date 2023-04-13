@@ -13,6 +13,8 @@ public class Enemy : MonoBehaviour
     private float currentHealth;
     public int reward = 50;
 
+    private bool isDead = false;
+
     [Header("Unity Stuff")]
     public Image healthBar;
 
@@ -28,7 +30,7 @@ public class Enemy : MonoBehaviour
 
         healthBar.fillAmount = currentHealth / startHealth;
 
-        if (currentHealth <= 0)
+        if (currentHealth <= 0 && !isDead)
         {
             Die();
         }
@@ -36,6 +38,8 @@ public class Enemy : MonoBehaviour
 
     void Die ()
     {
+        isDead = true;
+
         PlayerStats.Money += reward;
         Destroy(gameObject);
 
